@@ -1,4 +1,4 @@
-package azs.Reflection;
+﻿package azs.Reflection;
 
 
 import java.lang.reflect.Constructor;
@@ -24,7 +24,7 @@ public class Main_05 {
                 Constructor_Annotation ca = (Constructor_Annotation)constructor.getAnnotation(Constructor_Annotation.class);
                 System.out.println(ca.value());//获得注释信息
             }
-            Annotation[][] parameterAnnotations = constructor.getParameterAnnotations();
+            Annotation[][] parameterAnnotations = (Annotation[][]) constructor.getParameterAnnotations();
             for (int j = 0; j < parameterAnnotations.length; j++){
                 int length = parameterAnnotations[j].length;
                 if (length == 0)//如果长度为0表示没有为该注释添加参数
@@ -61,7 +61,7 @@ public class Main_05 {
                 System.out.println(ma.describe());
                 System.out.println(ma.type());
             }
-            Annotation[][] parameterAnnotations = method.getParameterAnnotations();
+           Annotation[][] parameterAnnotations =(Annotation[][]) method.getParameterAnnotations();
             for (int j = 0; j < parameterAnnotations.length; j++){
                 int length = parameterAnnotations[j].length; // 获得指定参数注释的长度
                 if (length == 0) // 如果长度为0表示没有为该参数添加注释
