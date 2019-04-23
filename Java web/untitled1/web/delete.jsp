@@ -15,13 +15,26 @@
 </head>
 <body>
 <%
-    String user = request.getParameter("user");
-    Date Mydate = new Date();
-    SimpleDateFormat dtf = new SimpleDateFormat("h:m:s");
-    Cookie Mycookie = new Cookie("mrCookie",user + "#" +dtf.format(Mydate));
-    Mycookie.setMaxAge(60*60*24*30);//设置cookie的有效期位30天
-    response.addCookie(Mycookie);
+    String name = request.getParameter("name");
+    session.setAttribute("name",name);
 %>
-<a href="index.jsp">返回</a>
+<div align="center">
+    <form id="form1" method="post" action="result.jsp">
+        <table width="28%" border="0">
+            <tr>
+                <td>你的名字:</td>
+                <td><%=name%></td>
+            </tr>
+            <tr>
+                <td>你的爱好</td>
+                <td>
+                    <label>
+                        <input type="text" name="address">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 </body>
 </html>
