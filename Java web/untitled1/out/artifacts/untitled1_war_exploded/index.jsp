@@ -13,7 +13,7 @@
     <title>第一个web应用</title>
       <style type="text/css">
           #clock{
-              width: 450px;
+              width: 500px;
               height: 80px;
               background: aqua;
               font-size: 25px;
