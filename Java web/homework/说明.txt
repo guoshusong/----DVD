@@ -1,7 +1,7 @@
 	Java Web 图书管理系统
-java --version ： 12(使用了泛型只要JDK7以上就可以)
-数据库：Mysql 5.0.25 （表的结构在book.sql脚本里面）
+java --version ： 使用了泛型只要JDK7以上就可以
+数据库：Mysql 5.0.25 （表的结构在sql文件夹里面）
 编辑器：IDEA
 tomcat --version:9.0.19
-运行需要改一下数据库url的配置
+运行需要改一下数据库url的配置，
 由于是现写的，数据库方面没有做任何优化。目前仍是一个Servlet连接一次数据库。
