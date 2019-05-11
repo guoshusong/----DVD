@@ -47,5 +47,9 @@
         }
     %>
 </table>
+<div align="center">
+    <a href="main.jsp">返回功能界面</a>
+    <a href="index.jsp">退出登陆</a>
+</div>
 </body>
 </html>

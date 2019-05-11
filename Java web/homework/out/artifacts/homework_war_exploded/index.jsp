@@ -9,20 +9,25 @@
 <html>
 <head>
   <title>程序设计实训作业</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <div align="center">
+  <div align="center" id = "dl">
     <div  align="center">
-      <a href="userregister.jsp">注册</a>
+
+      <br>
+      <strong><a href="userregister.jsp">注册</a></strong>
       <br>
     </div>
-    <a href="login.jsp">登陆</a>
+    <strong><a href="login.jsp">登陆</a></strong>
     <br>
     <br>
     <br>
     <br>
     <br>
     使用详情请见跟目录说明.txt
+      <br>
+      <strong>作者：Guo Shu Song</strong>
   </div>
 
 </form>

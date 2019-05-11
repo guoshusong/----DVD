@@ -21,23 +21,26 @@ public class ServletUserRegister extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         String userName = request.getParameter("userName");
         String userPassword = request.getParameter("userPassword");
+        String userEmail = request.getParameter("userEmail");
         String str = "";
         User user = new User();
         user.setUserName(userName);
         user.setUserPassword(userPassword);
+        user.setUserEmail(userEmail);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             //数据库连接字符串
-            String url = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=true";
+            String url = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false";
             //数据库用户名
             String username = "root";
             //数据库密码
             String password = "shumaosha2";
             Connection conn = DriverManager.getConnection(url,username,password);
-            String sql = "INSERT INTO user (userName,userPassword) VALUES(?,?)";
+            String sql = "INSERT INTO user (userName,userPassword,userEmail) VALUES(?,?,?)";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1,userName);
             ps.setString(2,userPassword);
+            ps.setString(3,userEmail);
             ps.executeUpdate();
             ps.close();
             conn.close();

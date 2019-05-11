@@ -22,7 +22,12 @@
             <tr>
                <td>密码：</td>
                 <td><input type="password" name="userPassword" /></td>
-            </tr> <tr>
+            </tr>
+            <tr>
+                <td>邮箱:</td>
+                <td><input type="text" name="userEmail"></td>
+            </tr>
+            <tr>
                <td class="tdstyle" colspan="2" align="center">
                       <input type="submit" value="注册" />
                        </td>

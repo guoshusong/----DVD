@@ -14,6 +14,7 @@
 <div align="center">
     <h1>用户名或密码错误</h1>
     <a href="login.jsp">返回登陆界面</a>
+    <a href="FindPassword.jsp">找回密码</a>
 </div>
 </body>
 </html>

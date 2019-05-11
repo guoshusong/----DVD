@@ -22,7 +22,7 @@
         //加载数据库驱动
         Class.forName("com.mysql.cj.jdbc.Driver");
         //数据库连接字符串
-        String url = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String url = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false";
         //数据库用户名
         String username = "root";
         //数据库密码
@@ -45,5 +45,8 @@
         e.printStackTrace();
     }
 %>
+<div align="center">
+    <a href="BookAdd.jsp">返回</a>
+</div>
 </body>
 </html>

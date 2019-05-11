@@ -10,19 +10,17 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2019-05-08 19:59:27
+Date: 2019-05-08 19:59:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for book
+-- Table structure for user
 -- ----------------------------
-DROP TABLE IF EXISTS `book`;
-CREATE TABLE `book` (
-  `bookCount` int(11) DEFAULT NULL,
-  `price` double(10,2) DEFAULT NULL,
-  `name` varchar(30) DEFAULT NULL,
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
   `id` int(11) DEFAULT NULL,
-  `author` varchar(30) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `userName` varchar(255) DEFAULT NULL,
+  `userPassword` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

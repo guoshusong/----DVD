@@ -15,7 +15,7 @@
     <table align="center" width="450">
         <tr>
             <td align="center" cosplan="1"></td>
-            <h2>图书信息添加</h2>
+            <h2 align="center">图书信息添加</h2>
         </tr>
         <tr>
             <td align="right">图书编号</td>
@@ -42,6 +42,11 @@
                 <input type="submit" value="添 加">
             </td>
         </tr>
+
     </table>
+    <div align="center">
+        <a href="main.jsp">返回功能界面</a>
+    </div>
+</form>
 </body>
 </html>

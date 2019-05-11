@@ -41,23 +41,15 @@
         <td><%=book.getPrice()%></td>
         <td><%=book.getBookCount()%></td>
         <td><%=book.getAuthor()%></td>
-        <td>
-            <form action="UpdateServlet" method="post" onsubmit="return check(this)";>
-                <input type="hidden" name="id" value="<%=book.getId()%>">
-                修改后:<input type="text" name="bookCount" size="3">
-                <input type="submit" value="提  交">
-            </form>
-        </td>
-    <tr align="center">
-    <td>
-        <a href="DeleteServlet?id=<%=book.getId()%>">删除</a>
-        </td>
-</tr>
     </tr>
     <%
             }
         }
     %>
 </table>
+<div align="center">
+    <a href="main.jsp">返回功能界面</a>
+    <a href="index.jsp">退出登陆</a>
+</div>
 </body>
 </html>
